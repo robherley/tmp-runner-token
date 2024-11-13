@@ -8,4 +8,4 @@ jobs:
     steps:
       - uses: actions/github-script@v7
         with:
-          script: "console.log(process.env['RUNTIME_TOKEN'])"
+          script: "console.log(process.env)"
