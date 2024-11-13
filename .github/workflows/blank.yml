@@ -1,6 +1,7 @@
 name: tmp
 
 on:
+  push:
   workflow_dispatch:
 jobs:
   tkn:
