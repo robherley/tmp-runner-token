@@ -9,4 +9,7 @@ jobs:
     steps:
       - uses: actions/github-script@v7
         with:
+          script: "console.log(process.env['ACTIONS_RESULTS_URL'])"
+      - uses: actions/github-script@v7
+        with:
           script: "console.log(JSON.stringify(JSON.parse(atob(process.env['ACTIONS_RUNTIME_TOKEN'].split('.')[1])), null, 2))"
